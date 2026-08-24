@@ -4,24 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loveth | Front-End Developer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav class="navbar">
-            <div>
-                <a href="#">Loveth</a>
-            </div>
+        
+        <div class="logo">
+            <a href="#">Loveth | Front-End Developer</a>
+        </div>
 
-            <div>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#contacts">Contact</a>
-            </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">AbOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
         </nav>
+
+        <!-- <button class="menu-toggle" aria-label="Toggle navigation"></button> -->
     </header>
 
-    <main>
+    <main id="home">
         <section id="hero">
             <h1>Hi, I'm Loveth.</h1>
             <h2>Front-End Developer</h2>
@@ -50,21 +55,29 @@
             <h2>Skills</h2>
 
             <dl>
-                <dt>HTML5</dt>
+                <div class="skill-card">
+                    <dt>HTML5</dt>
+                </div>
 
-                <dt>CSS3</dt>
-                <dd>Responsive Design</dd>
+                <div class="skill-card">
+                    <dt>CSS3</dt>
+                    <dd>Responsive Design</dd>
+                </div>
 
-                <dt>JavaScript</dt>
-                <dd>DOM Manipulation</dd>
-                <dd>Event Handling</dd>
-                <dd>Form Handling &amp; Validation</dd>
-                <dd>Local Storage</dd>
+                <div class="skill-card">
+                    <dt>JavaScript</dt>
+                    <dd>DOM Manipulation</dd>
+                    <dd>Event Handling</dd>
+                    <dd>Form Handling &amp; Validation</dd>
+                    <dd>Local Storage</dd>
+                </div>
 
-                <dt>Git &amp; GitHub</dt>
-                <dd>Repositories</dd>
-                <dd>Commits</dd>
-                <dd>Push &amp; Pull</dd>
+                <div class="skill-card">
+                    <dt>Git &amp; GitHub</dt>
+                    <dd>Repositories</dd>
+                    <dd>Commits</dd>
+                    <dd>Push &amp; Pull</dd>
+                </div>
             </dl>
         </section>
 
@@ -233,7 +246,7 @@
                 user-friendly web experiences.
             </p>
 
-            <div>
+            <div class="contact-links">
                 <a href="mailto:lovethmary.dev@gmail.com">Email</a>
 
                 <a href="https://wa.me/2348143075874">WhatsApp</a>
@@ -248,5 +261,7 @@
     <footer>
         <p>&copy; 2026 Loveth. Built with HTML, CSS &amp; JavaScript.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
