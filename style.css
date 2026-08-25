@@ -99,12 +99,21 @@ nav ul {
 nav a {
     text-decoration: none;
     color: var(--text-color);
-    font-weight: 500;
+    font-weight: 700;
     transition: color 0.3s ease;
 }
 
 nav a:hover {
     color: var(--accent-color);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
 }
 
 #hero {
@@ -295,10 +304,10 @@ footer {
 
 /* Mobile responsiveness */
 @media (max-width: 768px) {
-    header {
+    /* header {
         width: 100%;
         overflow: hidden;
-    }
+    } */
 
     nav {
         max-width: 100%;
@@ -308,6 +317,34 @@ footer {
         gap: 12px;
         flex-wrap: wrap;
         justify-content: flex-end;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        background-color: var(--card-background);
+        border-bottom-left-radius: 130px;
+        padding: 20px;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        font-family: 'courier new', monospace;
+        font-style: italic;
+        font-size: 1.6rem;
     }
 
     h1 {
