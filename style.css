@@ -76,8 +76,16 @@ header {
 }
 
 .logo a {
+    font-family: 'courier new', monospace;
     text-decoration: none;
     color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.logo span {
+    color: var(--accent-color);
 }
 
 nav ul {
@@ -123,14 +131,18 @@ nav a:hover {
     transition: background-color 0.3s ease;
 }
 
+#hero a:hover {
+    background-color: var(--accent-hover);
+}
+
 .hero-buttons {
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
 }
 
-#hero a:hover {
-    background-color: var(--accent-hover);
+.hero-buttons a i {
+    margin-left: 8px;
 }
 
 section {
@@ -168,7 +180,7 @@ section h2 {
     line-height: 1.5;
 }
 
-#projects {
+#projectsCards {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -243,19 +255,25 @@ section h2 {
     background-color: var(--accent-hover);
 }
 
+.contact-links a i,
+#projects article a i {
+    margin-right: 8px;
+}
+
 #contact p {
     max-width: 600px;
 }
 
 #contact a {
     display: inline-block;
+    margin-right: 20px;
     padding: 12px 24px;
     margin-top: 10px;
-    background-color: var(--accent-color);
+    background-color: white;
     border: 2px solid black;
     border-bottom: 5px solid black;
-    border-right: 5px solid black;
-    color: #ffffff;
+    border-right: 6px solid black;
+    color: black;
     text-decoration: none;
     font-weight: 600;
     border-radius: 6px;
@@ -263,7 +281,7 @@ section h2 {
 }
 
 #contact a:hover {
-    background-color: var(--accent-hover);
+    background-color: rgb(237, 222, 222);
 }
 
 footer {
@@ -323,7 +341,7 @@ footer {
     }
 
     /* Projects */
-    #projects {
+    #projectsCards {
         grid-template-columns: 1fr;
         gap: 20px;
     }

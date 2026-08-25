@@ -5,12 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loveth | Front-End Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
         
         <div class="logo">
-            <a href="#">Loveth | Front-End Developer</a>
+            <a href="#home">LOVETH <span>.</span></a>
         </div>
 
         <nav class="navbar">
@@ -23,7 +24,8 @@
             </ul>
         </nav>
 
-        <!-- <button class="menu-toggle" aria-label="Toggle navigation"></button> -->
+        <i class="fa-solid fa-bars"></i>
+        <!-- <i class="fa-solid fa-xmark"></i> -->
     </header>
 
     <main id="home">
@@ -36,8 +38,8 @@
             </p>
 
             <div class="hero-buttons">
-                <a href="#projects">View My Projects</a>
-                <a href="#contacts">Contact Me</a>
+                <a href="#projects">View My Projects<i class="fa-solid fa-arrow-down"></i></a>
+                <a href="#contact">Contact Me<i class="fa-solid fa-arrow-right"></i></a>
             </div>
         </section>
 
@@ -90,154 +92,156 @@
                 Here are some of the projects I've built while developing my front-end development skills.
             </p>
 
-            <article>
-                <img src="images/community-wellbeing-survey.jpg" alt="Community Well-being Survey Project Preview">
+            <div id="projectsCards">
+                <article>
+                    <img src="images/community-wellbeing-survey.jpg" alt="Community Well-being Survey Project Preview">
 
-                <h3>Community Well-being Survey</h3>
+                    <h3>Community Well-being Survey</h3>
 
-                <p>
-                    A front-end survey application designed to collect community well-being responses through a structured, multi-page experience.
-                </p>
+                    <p>
+                        A front-end survey application designed to collect community well-being responses through a structured, multi-page experience.
+                    </p>
 
-                <h4>Key Features</h4>
+                    <h4>Key Features</h4>
 
-                <ul>
-                    <li>Multi-page survey navigation</li>
-                    <li>Form validation and quality checks</li>
-                    <li>Data persistence with localStorage</li>
-                    <li>Response collection across multiple pages</li>
-                    <li>Submission</li>
-                </ul>
+                    <ul>
+                        <li>Multi-page survey navigation</li>
+                        <li>Form validation and quality checks</li>
+                        <li>Data persistence with localStorage</li>
+                        <li>Response collection across multiple pages</li>
+                        <li>Submission</li>
+                    </ul>
 
-                <h4>Technologies</h4>
+                    <h4>Technologies</h4>
 
-                <p>
-                    HTML . CSS . JavaScript . Local Storage
-                </p>
+                    <p>
+                        HTML . CSS . JavaScript . Local Storage
+                    </p>
 
-                <a href="#">Live Demo</a>
-                <a href="#">View Code</a>
-            </article>
+                    <a href="https://loveth-mary.github.io/community-wellbeing-survey/"><i class="fa-solid fa-arrow-up-right-from-square"></i>Live Demo</a>
+                    <a href="https://github.com/loveth-mary/community-wellbeing-survey"><i class="fa-brands fa-github"></i>View Code</a>
+                </article>
 
-            <article>
-                <img src="images/sparkleclean-services.jpg" alt="SparkleClean Services project preview">
+                <article>
+                    <img src="images/sparkleclean-services.jpg" alt="SparkleClean Services project preview">
 
-                <h3>SparkleClean Services</h3>
+                    <h3>SparkleClean Services</h3>
 
-                <p>
-                    A responsive cleaning services landing page designed to present
-                    services clearly and make it easy for potential customers to get in touch.
-                </p>
+                    <p>
+                        A responsive cleaning services landing page designed to present
+                        services clearly and make it easy for potential customers to get in touch.
+                    </p>
 
-                <h4>Key Features</h4>
+                    <h4>Key Features</h4>
 
-                <ul>
-                    <li>Responsive page layout</li>
-                    <li>Service presentation</li>
-                    <li>Clear call-to-action sections</li>
-                    <li>WhatsApp contact integration</li>
-                </ul>
+                    <ul>
+                        <li>Responsive page layout</li>
+                        <li>Service presentation</li>
+                        <li>Clear call-to-action sections</li>
+                        <li>WhatsApp contact integration</li>
+                    </ul>
 
-                <h4>Technologies</h4>
+                    <h4>Technologies</h4>
 
-                <p>
-                    HTML5 • CSS3 • JavaScript
-                </p>
+                    <p>
+                        HTML5 • CSS3 • JavaScript
+                    </p>
 
-                <a href="#">Live Demo</a>
-                <a href="#">View Code</a>
-            </article>
+                    <a href="https://loveth-mary.github.io/SparkleClean-Services/"><i class="fa-solid fa-arrow-up-right-from-square"></i>Live Demo</a>
+                    <a href="https://github.com/loveth-mary/SparkleClean-Services"><i class="fa-brands fa-github"></i>View Code</a>
+                </article>
 
-            <article>
-                <img src="images/simple-home-recipes.jpg"
-                    alt="Simple Home Recipes project preview">
+                <article>
+                    <img src="images/simple-home-recipes.jpg"
+                        alt="Simple Home Recipes project preview">
 
-                <h3>Simple Home Recipes</h3>
+                    <h3>Simple Home Recipes</h3>
 
-                <p>
-                    A recipe website where users can explore meal ideas and submit
-                    their own recipes, including recipe information and image URLs,
-                    for consideration to be added to the collection.
-                </p>
+                    <p>
+                        A recipe website where users can explore meal ideas and submit
+                        their own recipes, including recipe information and image URLs,
+                        for consideration to be added to the collection.
+                    </p>
 
-                <h4>Key Features</h4>
+                    <h4>Key Features</h4>
 
-                <ul>
-                    <li>Recipe presentation</li>
-                    <li>User recipe submission</li>
-                    <li>Form handling and data collection</li>
-                    <li>WhatsApp submission</li>
-                    <li>Responsive page layout</li>
-                </ul>
+                    <ul>
+                        <li>Recipe presentation</li>
+                        <li>User recipe submission</li>
+                        <li>Form handling and data collection</li>
+                        <li>WhatsApp submission</li>
+                        <li>Responsive page layout</li>
+                    </ul>
 
-                <h4>Technologies</h4>
+                    <h4>Technologies</h4>
 
-                <p>
-                    HTML5 • CSS3 • JavaScript
-                </p>
+                    <p>
+                        HTML5 • CSS3 • JavaScript
+                    </p>
 
-                <a href="#">Live Demo</a>
-                <a href="#">View Code</a>
-            </article>
-            
-            <article>
-                <img src="images/study-hours-tracker.png"
-                    alt="Study Hours Tracker project preview">
+                    <a href="https://loveth-mary.github.io/Simple-Home-Recipes/"><i class="fa-solid fa-arrow-up-right-from-square"></i>Live Demo</a>
+                    <a href="https://github.com/loveth-mary/Simple-Home-Recipes"><i class="fa-brands fa-github"></i>View Code</a>
+                </article>
+                
+                <article>
+                    <img src="images/study-hours-tracker.png"
+                        alt="Study Hours Tracker project preview">
 
-                <h3>Study Hours Tracker</h3>
+                    <h3>Study Hours Tracker</h3>
 
-                <p>
-                    A simple web application designed to help users record and keep track
-                    of the time they spend studying.
-                </p>
+                    <p>
+                        A simple web application designed to help users record and keep track
+                        of the time they spend studying.
+                    </p>
 
-                <h4>Key Features</h4>
+                    <h4>Key Features</h4>
 
-                <ul>
-                    <li>Study hours tracking</li>
-                    <li>Interactive user input</li>
-                    <li>Dynamic data display</li>
-                </ul>
+                    <ul>
+                        <li>Study hours tracking</li>
+                        <li>Interactive user input</li>
+                        <li>Dynamic data display</li>
+                    </ul>
 
-                <h4>Technologies</h4>
+                    <h4>Technologies</h4>
 
-                <p>
-                    HTML5 • CSS3 • JavaScript
-                </p>
+                    <p>
+                        HTML5 • CSS3 • JavaScript
+                    </p>
 
-                <a href="#">Live Demo</a>
-                <a href="#">View Code</a>
-            </article>
+                    <a href="https://loveth-mary.github.io/Study-Hours-Tracker-JS/"><i class="fa-solid fa-arrow-up-right-from-square"></i>Live Demo</a>
+                    <a href="https://github.com/loveth-mary/Study-Hours-Tracker-JS"><i class="fa-brands fa-github"></i>View Code</a>
+                </article>
 
-            <article>
-                <img src="images/Calculator.png"
-                    alt="JavaScript Calculator project preview">
+                <article>
+                    <img src="images/Calculator.png"
+                        alt="JavaScript Calculator project preview">
 
-                <h3>JavaScript Calculator</h3>
+                    <h3>JavaScript Calculator</h3>
 
-                <p>
-                    A functional calculator built to perform basic arithmetic operations
-                    through an interactive user interface.
-                </p>
+                    <p>
+                        A functional calculator built to perform basic arithmetic operations
+                        through an interactive user interface.
+                    </p>
 
-                <h4>Key Features</h4>
+                    <h4>Key Features</h4>
 
-                <ul>
-                    <li>Basic arithmetic calculations</li>
-                    <li>Interactive button controls</li>
-                    <li>Dynamic result display</li>
-                    <li>Data persistence with localStorage</li>
-                </ul>
+                    <ul>
+                        <li>Basic arithmetic calculations</li>
+                        <li>Interactive button controls</li>
+                        <li>Dynamic result display</li>
+                        <li>Data persistence with localStorage</li>
+                    </ul>
 
-                <h4>Technologies</h4>
+                    <h4>Technologies</h4>
 
-                <p>
-                    HTML5 • CSS3 • JavaScript • Local Storage
-                </p>
+                    <p>
+                        HTML5 • CSS3 • JavaScript • Local Storage
+                    </p>
 
-                <a href="#">Live Demo</a>
-                <a href="#">View Code</a>
-            </article>
+                    <a href="https://loveth-mary.github.io/simple-js-calculator/"><i class="fa-solid fa-arrow-up-right-from-square"></i>Live Demo</a>
+                    <a href="https://github.com/loveth-mary/simple-js-calculator"><i class="fa-brands fa-github"></i>View Code</a>
+                </article>
+            </div>
         </section>
 
         <section id="contact">
@@ -249,13 +253,13 @@
             </p>
 
             <div class="contact-links">
-                <a href="mailto:lovethmary.dev@gmail.com">Email</a>
+                <a href="mailto:lovethmary.dev@gmail.com"><i class="fa-solid fa-envelope"></i>Email</a>
 
-                <a href="https://wa.me/2348143075874">WhatsApp</a>
+                <a href="https://wa.me/2348143075874"><i class="fa-brands fa-whatsapp"></i>WhatsApp</a>
 
-                <a href="https://github.com/loveth-mary">GitHub</a>
+                <a href="https://github.com/loveth-mary"><i class="fa-brands fa-github"></i>GitHub</a>
 
-                <a href="https://www.linkedin.com/in/loveth-mary-0858b02b2/">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/loveth-mary-0858b02b2/"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
             </div>
         </section>
     </main>
