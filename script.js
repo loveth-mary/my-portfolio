@@ -13,8 +13,20 @@ menuToggle.addEventListener("click", () => {
     }
 });
 
+const navLinks = document.querySelectorAll("nav a");
 
-const heroTitle = document.querySelector("#hero-tittle");
+navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        nav.classList.remove("active");
+
+        menuToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+        menuToggle.setAttribute("aria-label", "Open navigation");
+    });
+});
+
+
+// Animations
+const heroTitle = document.querySelector("#hero-title");
 
 if (heroTitle) {
     const text = heroTitle.textContent;
