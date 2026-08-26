@@ -62,3 +62,18 @@ const observer = new IntersectionObserver((entries) => {
 scrollElements.forEach((element) => {
     observer.observe(element);
 });
+
+
+const themeToggle = document.querySelector(".theme-toggle");
+
+themeToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        themeToggle.innerHTML = '<i class="fa-solid fa-sun"></i>';
+        themeToggle.setAttribute("aria-label", "Switch to light mode");
+    } else {
+        themeToggle.innerHTML = '<i class="fa-solid fa-moon"></i>';
+        themeToggle.setAttribute("aria-label", "Switch to dark mode");
+    }
+});
